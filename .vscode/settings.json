@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "physfs_internal.h": "c",
+        "physfs_platforms.h": "c"
+    }
+}

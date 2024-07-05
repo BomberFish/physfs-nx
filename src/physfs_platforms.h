@@ -78,6 +78,9 @@
 #elif defined(__wii__) || defined(__gamecube__)
 #  define PHYSFS_PLATFORM_OGC 1
 #  define PHYSFS_NO_CDROM_SUPPORT 1 // TODO
+#elif defined(__SWITCH__)
+#  define PHYSFS_PLATFORM_NX 1
+#  define PHYSFS_NO_CDROM_SUPPORT 1
 #else
 #  error Unknown platform.
 #endif
