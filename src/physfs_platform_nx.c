@@ -66,7 +66,7 @@ char *__PHYSFS_platformCalcUserDir(void)
 
 char *__PHYSFS_platformCalcPrefDir(const char *org, const char *app) {
     // MARK: GAAAH FIX THIS!!!
-    return "sdmc:/switch/physfs_pref";
+    return "sdmc:/switch/physfs_pref/";
 }
 
 
