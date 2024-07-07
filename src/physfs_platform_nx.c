@@ -65,15 +65,8 @@ char *__PHYSFS_platformCalcUserDir(void)
 } /* __PHYSFS_platformCalcUserDir */
 
 char *__PHYSFS_platformCalcPrefDir(const char *org, const char *app) {
-    // far from ideal...
-    // should evaluate to "sdmc:/switch/<appname>"
-    char *userDir = __PHYSFS_platformCalcUserDir();
-    char *retval = (char *) allocator.Malloc(strlen(userDir) + strlen(app) + 2);
-    strcpy(retval, userDir);
-    strcat(retval, app);
-    strcat(retval, "/");
-    allocator.Free(userDir);
-    return retval;
+    // MARK: GAAAH FIX THIS!!!
+    return "sdmc:/switch/physfs_pref";
 }
 
 
